@@ -1,0 +1,607 @@
+body{
+    background: url("../img/fon1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    .conteiner{
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto; /* Выравнивание контейнера по центру */
+        box-sizing: border-box;
+        @media (min-width: 1080px) {
+            .container {
+              padding-left: calc((100% - 1080px) / 2); /* Динамический левый отступ */
+              padding-right: calc((100% - 1080px) / 2); /* Динамический правый отступ */
+            }
+        }
+          
+        header{
+            max-width: 1080px;
+            height: 50px;
+            background: linear-gradient(90deg, #005FA4 0%, rgba(40, 114, 167, 0.01) 100%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2%;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            .left-info{
+                display: flex;
+                justify-content: space-between;
+                column-gap: 10px;
+                p{
+                    color: white;
+                    font-size: 24px;
+                }
+                p:hover{
+                    color: rgb(0, 183, 255);
+                    cursor: pointer;
+                }
+            }
+            .right-info{
+                display: flex;
+                justify-content: space-between;
+                column-gap: 20px;
+                a{
+                    img{
+                       width: 30px; 
+                    }
+                    
+                }
+            }
+            @media (min-width: 547px) {
+                height: 80px;
+                .left-info{
+                    p{
+                        font-size: 32px;
+                    }
+                }
+                .right-info{
+                    column-gap: 50px;
+                    a{
+                        img{
+                            width: 50px;
+                        }
+                       
+                    }
+                }
+
+            }
+            @media (min-width: 1024px) {
+                height: 40px;
+                .left-info{
+                    p{
+                        font-size: 24px;
+                    }
+                }
+                .right-info{
+                    column-gap: 50px;
+                    a{
+                        img{
+                            width: 25px;
+                        }
+                       
+                    }
+                }
+
+            }
+        }
+
+        nav{
+            width: 100vi;
+            height: 60vi;
+            display: flex;
+            justify-content: space-between;
+
+            .user-info {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                .my-foto {
+                    width: 40vi;
+                    height: 40vi;
+                    img{
+                        width: 40vi;
+                    }
+                }
+                .contacts {
+                    width: 40vi;
+                    height: 20vi;
+
+                    background: linear-gradient(90deg, #66C7F0 0%, #0094FF 100%);
+                    text-align: center;
+                    
+                    p{
+                        color: white;
+                        font-size: 18px; 
+                        padding: 5px;
+                        margin: 0 auto;
+                    }
+                    @media (min-width: 540px) {
+                        p{
+                            font-size: 28px; 
+                        }
+                        
+                    }
+                }
+            }
+            
+            .salon-info {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                
+                .nav-info {
+                    background: url('../img/navbackgraund.jpg') 0 0/cover no-repeat;
+                    width: 60vi;
+                    height: 50vi;
+                    display: flex;
+                    justify-content: space-between;
+                    .nav-itms {
+                        width: 30vi;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        padding: 0 20px;
+                        a{
+                            p{
+                                font-size: 24px;
+                                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                color: #007ABE;
+                                text-shadow: -1px 2px 0px #001433;
+                                -webkit-text-stroke: 1px white;
+                            }
+                            p:hover{
+                                color: #023a8e;
+                                text-decoration: underline;
+                            }
+                        }
+                        
+                    }
+                    .location {
+                        width: 30vi;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        padding: 0 20px;
+                        align-items: flex-end;
+                        p{
+                            display: none;
+                            font-size: 48px;
+                            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            color: #007ABE;
+                            text-shadow: -1px 2px 0px #001433;
+                            -webkit-text-stroke: 1px white;
+                        }
+                        img{
+                            max-width: 15vi;
+                            max-height: 7vi;
+                            margin: 0 0 25vi 0;
+                        }
+                    }
+                }
+                .cyti {
+                    padding: 0 0 0 0;
+                    width: 60vi;
+                    height: 25vi;
+                    
+                    display: block;
+                    background: url('../img/nykolaiv2.jpg') 0 0/cover no-repeat;
+                }
+            }
+            @media (min-width: 700px) {
+                height: 40vi;
+                .user-info {
+                    .my-foto {
+                        width: 30vi;
+                        height: 30vi;
+                        img{
+                            width: 30vi;
+                        }
+                    }
+                    .contacts {
+                        width: 30vi;
+                        height: 10vi;
+                        p{
+                            font-size: 20px; 
+                        }
+                    }
+                }
+                .salon-info {
+                    .nav-info {
+                        width: 70vi;
+                        height: 40vi;
+                        .nav-itms {
+                            width: 35vi;
+                            a{
+                                p{
+                                    font-size: 32px;
+                                    
+                                }
+                            }
+                            
+                        }
+                        
+                        .location {
+                            width: 35vi;
+                            p{
+                                display: block; 
+                                font-size: 36px;
+                                
+                            }
+                            img{
+                                max-width: 30vi;
+                                max-height: 10vi;
+                                margin: 0 0 0 0;
+                            }
+                        }
+                    }
+                    .cyti {
+                        padding: 0 0 10px 0;
+                        width: 70vi;
+                        height: 13vi;
+                        background: url('../img/nykolaiv.jpg') 0 0/cover no-repeat;
+                    }
+                }
+            }
+            @media (min-width: 990px) {
+                max-width: 1080px;
+                height: 370px; 
+                padding: 40px 0;
+                .user-info {
+                    .my-foto {
+                        width: 200px;
+                        height: 200px;
+                        img{
+                            max-width: 200px;
+                        }
+                    }
+                    .contacts {
+                        width: 200px;
+                        height: 80px;
+                        p{
+                            font-size: 26px; 
+                        }
+                    }
+                }
+
+                .salon-info {
+                    
+                    .nav-info {
+                        max-width: 790px;
+                        height: 300px;
+                        .nav-itms {
+                            max-width: 345px;
+                            a{
+                                p{
+                                    font-size: 46px;
+                                }
+                            }
+                            
+                        }
+                        .location {
+                            max-width: 345px;
+                            p{
+                                font-size: 48px;
+                            }
+                            img{
+                                max-width: 690px;
+                                max-height: 100px; 
+                            }
+                        }
+                    }
+                    .cyti {
+                        width: auto;
+                        height: 100px;
+                        background: url('../img/niko32.svg') 0 0/cover no-repeat;
+                    }
+                }
+            }
+            
+        }
+
+        main{
+            
+            .price-head{
+                background: url('../img/1.jpg') 0 0/cover no-repeat;
+                padding: 30px 0;
+                .paragraf{
+                    font-size: 48px;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color: #007ABE;
+                    text-shadow: -1px 2px 0px #001433;
+                    -webkit-text-stroke: 1px white;
+                    height: 48px;
+                    padding: 0 0 0 60px;
+                }
+                .price{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    padding: 30px 0;
+                    .left-price, .right-price{
+                        .price-block{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 5% ;
+                            text-align: start;
+                            .procedur{
+                                display: flex;
+                                justify-content: space-between;
+                                column-gap: 3%;
+                                flex-grow:1;
+                                
+                                img{
+                                    height: 30px;
+                                }
+                                p{
+                                    font-size: 20px;
+                                }
+                                .procedur-naim {
+                                    font-size: 24px;
+                                    background: none;
+                                    flex-grow:1;
+                                    color: rgb(0, 187, 255);
+                                    font-family: 'Lobster';
+                                    
+                                }
+                                
+                            }
+                            .prices {
+                                font-size: 20px;
+                                color: rgb(234, 255, 75);
+                                font-family: 'Lobster';                                 
+                            }
+                            @media (min-width: 547px) {
+                                p{
+                                    font-size: 26px;
+                                }
+                                .procedur-naim {
+                                    font-size: 36px;
+                                }
+                                .prices{
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+                        .price-block:hover{
+                            text-decoration: underline;
+                            color: #00ca0d;
+                            p{
+                                color: rgb(255, 0, 0);
+                            }
+                            .procedur-naim {
+                                color: rgb(255, 120, 237);
+                            }
+                        }
+                    }
+                    .left-price{
+                        padding: 0 0 0 0;
+                    }
+                    @media (min-width: 775px) {
+                        flex-direction: row;
+                        .left-price{
+                            padding: 0 0 0 70px;
+                        }
+                    }
+                    
+                }
+            }
+            .my-procedur-list {
+                
+                padding: 0 0;
+                .lips, .botox, .lifting{
+                    display: flex;
+                    justify-content: space-between;
+                    background: linear-gradient(262.19deg, rgba(30, 171, 163, 0.37) 0%, rgba(255, 255, 255, 0) 100%);
+                }
+                .botox{
+                    background: linear-gradient(262.19deg, rgba(255, 255, 255, 0) 0%,rgba(30, 171, 163, 0.37) 100%);
+                }
+                .left-foto {
+                    display: none;
+                    img{
+                        width: 400px;
+                    }
+                }
+                .right-content {
+                    padding: 3%;
+                    p{
+                        font-size: 32px;
+                        color: #005FA4;
+                        span{
+                            font-size: 36px;
+                            color: brown;
+                        }
+                    }
+                }
+                @media (min-width: 990px) {
+                    padding: 40px 0;
+                }
+                @media (min-width: 924px) {
+                    .right-content {
+                        p{
+                            font-size: 36px;
+                            span{
+                                font-size: 42px;
+                            }
+                        }
+                    }
+                }
+                @media (min-width: 884px) {
+                    .left-foto {
+                        display: block;
+                        img{
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+
+            .main-procedur {
+                .main-procedur-foto {
+                    img{
+                        max-width: 100%
+                    }
+                }
+                .info-main-procedur {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    background: linear-gradient(262.19deg, rgba(255, 255, 255, 0.107) 40%, rgba(12, 254, 193, 0.649) 100%);
+                    .about {
+                        width: 100%;
+                        padding: 2%;
+                        p{
+                            font-size: 36px;
+                            color:#005FA4;
+                            span{
+                                font-size: 46px;
+                                color: brown;
+                            }
+                        }
+                    }
+                    .advantage {
+                        display: none;
+                        width: 540px;
+                        p{
+                            font-size: 32px;
+                            color:#005FA4;
+                        }
+                    }
+                    @media (min-width: 820px) {
+                        .about {
+                            width: 540px;
+                        }
+                        .advantage {
+                            display: block;
+                        }
+                    }
+                }
+                
+            }
+            .sliders{
+                .wraper-conteiner {
+                    .wraper {
+                        position: relative;
+                        .left,.right {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background: none;
+                            border: none;
+                            cursor: pointer;
+                            
+                            img {
+                            width: 70px;
+                            }
+                        }
+                        
+                        .carousel {
+                            display: flex;
+                            overflow-x: hidden;
+                            
+                            .foto-slid {
+                                flex: 0 0 auto;
+                                height: 100%;
+                                object-fit: cover;
+                                user-select: none;
+                                
+                                width: calc(100%);
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                }
+                                @media (min-width: 568px) {
+                                    width: calc(100% / 2);
+                                }
+                                @media (min-width: 1024px) {
+                                    width: calc(100% / 3);
+                                }
+                                
+                            }
+                        }
+                        
+                        .right {
+                            right: 20px;
+                        }
+                        
+                        .left {
+                            left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        
+        .cosmetolog-futr, .frontend-futer {
+            max-width: 1080px;
+            height: 200px;
+            background: linear-gradient(93.92deg, #1EABA3 0%, #2872A7 53.21%);
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            .up-info {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 4%;
+                
+                .profesion {
+                    p{
+                        font-size: 32px;
+                    }
+                }
+                .yor-name {
+                    p{
+                        font-size: 32px;
+                    }
+                }
+            }
+            .dovn-info {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 4%;
+                
+                .yor-links {
+                    display: flex;
+                    justify-content: space-between;
+                    column-gap: 20px;
+                    align-items: center;
+                    a{
+                        img{
+                            width: 40px;
+                        }
+                    }
+                }
+                .yor-foto {
+                    img{
+                        width: 70px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+            @media (min-width: 425px) {
+                .yor-links {
+                    column-gap: 50px;
+                    a{
+                        img{
+                            width: 50px;
+                        }
+                    }
+                }
+                .yor-foto {
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+            
+        }
+        .frontend-futer{
+            background: linear-gradient(93.92deg, #2872A7 0%,#1EABA3 53.21%);
+            
+        }
+    }
+}
+

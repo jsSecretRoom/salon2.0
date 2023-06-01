@@ -1,0 +1,537 @@
+@charset "UTF-8";
+body {
+  background: url("../img/fon1.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+body .conteiner {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto; /* Выравнивание контейнера по центру */
+  box-sizing: border-box;
+}
+@media (min-width: 1080px) {
+  body .conteiner .container {
+    padding-left: calc((100% - 1080px) / 2); /* Динамический левый отступ */
+    padding-right: calc((100% - 1080px) / 2); /* Динамический правый отступ */
+  }
+}
+body .conteiner header {
+  max-width: 1080px;
+  height: 50px;
+  background: linear-gradient(90deg, #005FA4 0%, rgba(40, 114, 167, 0.01) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+body .conteiner header .left-info {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+body .conteiner header .left-info p {
+  color: white;
+  font-size: 24px;
+}
+body .conteiner header .left-info p:hover {
+  color: rgb(0, 183, 255);
+  cursor: pointer;
+}
+body .conteiner header .right-info {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+body .conteiner header .right-info a img {
+  width: 30px;
+}
+@media (min-width: 547px) {
+  body .conteiner header {
+    height: 80px;
+  }
+  body .conteiner header .left-info p {
+    font-size: 32px;
+  }
+  body .conteiner header .right-info {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  body .conteiner header .right-info a img {
+    width: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  body .conteiner header {
+    height: 40px;
+  }
+  body .conteiner header .left-info p {
+    font-size: 24px;
+  }
+  body .conteiner header .right-info {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  body .conteiner header .right-info a img {
+    width: 25px;
+  }
+}
+body .conteiner nav {
+  width: 100vi;
+  height: 60vi;
+  display: flex;
+  justify-content: space-between;
+}
+body .conteiner nav .user-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body .conteiner nav .user-info .my-foto {
+  width: 40vi;
+  height: 40vi;
+}
+body .conteiner nav .user-info .my-foto img {
+  width: 40vi;
+}
+body .conteiner nav .user-info .contacts {
+  width: 40vi;
+  height: 20vi;
+  background: linear-gradient(90deg, #66C7F0 0%, #0094FF 100%);
+  text-align: center;
+}
+body .conteiner nav .user-info .contacts p {
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  margin: 0 auto;
+}
+@media (min-width: 540px) {
+  body .conteiner nav .user-info .contacts p {
+    font-size: 28px;
+  }
+}
+body .conteiner nav .salon-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body .conteiner nav .salon-info .nav-info {
+  background: url("../img/navbackgraund.jpg") 0 0/cover no-repeat;
+  width: 60vi;
+  height: 50vi;
+  display: flex;
+  justify-content: space-between;
+}
+body .conteiner nav .salon-info .nav-info .nav-itms {
+  width: 30vi;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+body .conteiner nav .salon-info .nav-info .nav-itms a p {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #007ABE;
+  text-shadow: -1px 2px 0px #001433;
+  -webkit-text-stroke: 1px white;
+}
+body .conteiner nav .salon-info .nav-info .nav-itms a p:hover {
+  color: #023a8e;
+  text-decoration: underline;
+}
+body .conteiner nav .salon-info .nav-info .location {
+  width: 30vi;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 20px;
+  align-items: flex-end;
+}
+body .conteiner nav .salon-info .nav-info .location p {
+  display: none;
+  font-size: 48px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #007ABE;
+  text-shadow: -1px 2px 0px #001433;
+  -webkit-text-stroke: 1px white;
+}
+body .conteiner nav .salon-info .nav-info .location img {
+  max-width: 15vi;
+  max-height: 7vi;
+  margin: 0 0 25vi 0;
+}
+body .conteiner nav .salon-info .cyti {
+  padding: 0 0 0 0;
+  width: 60vi;
+  height: 25vi;
+  display: block;
+  background: url("../img/nykolaiv2.jpg") 0 0/cover no-repeat;
+}
+@media (min-width: 700px) {
+  body .conteiner nav {
+    height: 40vi;
+  }
+  body .conteiner nav .user-info .my-foto {
+    width: 30vi;
+    height: 30vi;
+  }
+  body .conteiner nav .user-info .my-foto img {
+    width: 30vi;
+  }
+  body .conteiner nav .user-info .contacts {
+    width: 30vi;
+    height: 10vi;
+  }
+  body .conteiner nav .user-info .contacts p {
+    font-size: 20px;
+  }
+  body .conteiner nav .salon-info .nav-info {
+    width: 70vi;
+    height: 40vi;
+  }
+  body .conteiner nav .salon-info .nav-info .nav-itms {
+    width: 35vi;
+  }
+  body .conteiner nav .salon-info .nav-info .nav-itms a p {
+    font-size: 32px;
+  }
+  body .conteiner nav .salon-info .nav-info .location {
+    width: 35vi;
+  }
+  body .conteiner nav .salon-info .nav-info .location p {
+    display: block;
+    font-size: 36px;
+  }
+  body .conteiner nav .salon-info .nav-info .location img {
+    max-width: 30vi;
+    max-height: 10vi;
+    margin: 0 0 0 0;
+  }
+  body .conteiner nav .salon-info .cyti {
+    padding: 0 0 10px 0;
+    width: 70vi;
+    height: 13vi;
+    background: url("../img/nykolaiv.jpg") 0 0/cover no-repeat;
+  }
+}
+@media (min-width: 990px) {
+  body .conteiner nav {
+    max-width: 1080px;
+    height: 370px;
+    padding: 40px 0;
+  }
+  body .conteiner nav .user-info .my-foto {
+    width: 200px;
+    height: 200px;
+  }
+  body .conteiner nav .user-info .my-foto img {
+    max-width: 200px;
+  }
+  body .conteiner nav .user-info .contacts {
+    width: 200px;
+    height: 80px;
+  }
+  body .conteiner nav .user-info .contacts p {
+    font-size: 26px;
+  }
+  body .conteiner nav .salon-info .nav-info {
+    max-width: 790px;
+    height: 300px;
+  }
+  body .conteiner nav .salon-info .nav-info .nav-itms {
+    max-width: 345px;
+  }
+  body .conteiner nav .salon-info .nav-info .nav-itms a p {
+    font-size: 46px;
+  }
+  body .conteiner nav .salon-info .nav-info .location {
+    max-width: 345px;
+  }
+  body .conteiner nav .salon-info .nav-info .location p {
+    font-size: 48px;
+  }
+  body .conteiner nav .salon-info .nav-info .location img {
+    max-width: 690px;
+    max-height: 100px;
+  }
+  body .conteiner nav .salon-info .cyti {
+    width: auto;
+    height: 100px;
+    background: url("../img/niko32.svg") 0 0/cover no-repeat;
+  }
+}
+body .conteiner main .price-head {
+  background: url("../img/1.jpg") 0 0/cover no-repeat;
+  padding: 30px 0;
+}
+body .conteiner main .price-head .paragraf {
+  font-size: 48px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #007ABE;
+  text-shadow: -1px 2px 0px #001433;
+  -webkit-text-stroke: 1px white;
+  height: 48px;
+  padding: 0 0 0 60px;
+}
+body .conteiner main .price-head .price {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px 0;
+}
+body .conteiner main .price-head .price .left-price .price-block, body .conteiner main .price-head .price .right-price .price-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  text-align: start;
+}
+body .conteiner main .price-head .price .left-price .price-block .procedur, body .conteiner main .price-head .price .right-price .price-block .procedur {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  flex-grow: 1;
+}
+body .conteiner main .price-head .price .left-price .price-block .procedur img, body .conteiner main .price-head .price .right-price .price-block .procedur img {
+  height: 30px;
+}
+body .conteiner main .price-head .price .left-price .price-block .procedur p, body .conteiner main .price-head .price .right-price .price-block .procedur p {
+  font-size: 20px;
+}
+body .conteiner main .price-head .price .left-price .price-block .procedur .procedur-naim, body .conteiner main .price-head .price .right-price .price-block .procedur .procedur-naim {
+  font-size: 24px;
+  background: none;
+  flex-grow: 1;
+  color: rgb(0, 187, 255);
+  font-family: "Lobster";
+}
+body .conteiner main .price-head .price .left-price .price-block .prices, body .conteiner main .price-head .price .right-price .price-block .prices {
+  font-size: 20px;
+  color: rgb(234, 255, 75);
+  font-family: "Lobster";
+}
+@media (min-width: 547px) {
+  body .conteiner main .price-head .price .left-price .price-block p, body .conteiner main .price-head .price .right-price .price-block p {
+    font-size: 26px;
+  }
+  body .conteiner main .price-head .price .left-price .price-block .procedur-naim, body .conteiner main .price-head .price .right-price .price-block .procedur-naim {
+    font-size: 36px;
+  }
+  body .conteiner main .price-head .price .left-price .price-block .prices, body .conteiner main .price-head .price .right-price .price-block .prices {
+    font-size: 30px;
+  }
+}
+body .conteiner main .price-head .price .left-price .price-block:hover, body .conteiner main .price-head .price .right-price .price-block:hover {
+  text-decoration: underline;
+  color: #00ca0d;
+}
+body .conteiner main .price-head .price .left-price .price-block:hover p, body .conteiner main .price-head .price .right-price .price-block:hover p {
+  color: rgb(255, 0, 0);
+}
+body .conteiner main .price-head .price .left-price .price-block:hover .procedur-naim, body .conteiner main .price-head .price .right-price .price-block:hover .procedur-naim {
+  color: rgb(255, 120, 237);
+}
+body .conteiner main .price-head .price .left-price {
+  padding: 0 0 0 0;
+}
+@media (min-width: 775px) {
+  body .conteiner main .price-head .price {
+    flex-direction: row;
+  }
+  body .conteiner main .price-head .price .left-price {
+    padding: 0 0 0 70px;
+  }
+}
+body .conteiner main .my-procedur-list {
+  padding: 0 0;
+}
+body .conteiner main .my-procedur-list .lips, body .conteiner main .my-procedur-list .botox, body .conteiner main .my-procedur-list .lifting {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(262.19deg, rgba(30, 171, 163, 0.37) 0%, rgba(255, 255, 255, 0) 100%);
+}
+body .conteiner main .my-procedur-list .botox {
+  background: linear-gradient(262.19deg, rgba(255, 255, 255, 0) 0%, rgba(30, 171, 163, 0.37) 100%);
+}
+body .conteiner main .my-procedur-list .left-foto {
+  display: none;
+}
+body .conteiner main .my-procedur-list .left-foto img {
+  width: 400px;
+}
+body .conteiner main .my-procedur-list .right-content {
+  padding: 3%;
+}
+body .conteiner main .my-procedur-list .right-content p {
+  font-size: 32px;
+  color: #005FA4;
+}
+body .conteiner main .my-procedur-list .right-content p span {
+  font-size: 36px;
+  color: brown;
+}
+@media (min-width: 990px) {
+  body .conteiner main .my-procedur-list {
+    padding: 40px 0;
+  }
+}
+@media (min-width: 924px) {
+  body .conteiner main .my-procedur-list .right-content p {
+    font-size: 36px;
+  }
+  body .conteiner main .my-procedur-list .right-content p span {
+    font-size: 42px;
+  }
+}
+@media (min-width: 884px) {
+  body .conteiner main .my-procedur-list .left-foto {
+    display: block;
+  }
+  body .conteiner main .my-procedur-list .left-foto img {
+    width: 400px;
+  }
+}
+body .conteiner main .main-procedur .main-procedur-foto img {
+  max-width: 100%;
+}
+body .conteiner main .main-procedur .info-main-procedur {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: linear-gradient(262.19deg, rgba(255, 255, 255, 0.107) 40%, rgba(12, 254, 193, 0.649) 100%);
+}
+body .conteiner main .main-procedur .info-main-procedur .about {
+  width: 100%;
+  padding: 2%;
+}
+body .conteiner main .main-procedur .info-main-procedur .about p {
+  font-size: 36px;
+  color: #005FA4;
+}
+body .conteiner main .main-procedur .info-main-procedur .about p span {
+  font-size: 46px;
+  color: brown;
+}
+body .conteiner main .main-procedur .info-main-procedur .advantage {
+  display: none;
+  width: 540px;
+}
+body .conteiner main .main-procedur .info-main-procedur .advantage p {
+  font-size: 32px;
+  color: #005FA4;
+}
+@media (min-width: 820px) {
+  body .conteiner main .main-procedur .info-main-procedur .about {
+    width: 540px;
+  }
+  body .conteiner main .main-procedur .info-main-procedur .advantage {
+    display: block;
+  }
+}
+body .conteiner main .sliders .wraper-conteiner .wraper {
+  position: relative;
+}
+body .conteiner main .sliders .wraper-conteiner .wraper .left, body .conteiner main .sliders .wraper-conteiner .wraper .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+body .conteiner main .sliders .wraper-conteiner .wraper .left img, body .conteiner main .sliders .wraper-conteiner .wraper .right img {
+  width: 70px;
+}
+body .conteiner main .sliders .wraper-conteiner .wraper .carousel {
+  display: flex;
+  overflow-x: hidden;
+}
+body .conteiner main .sliders .wraper-conteiner .wraper .carousel .foto-slid {
+  flex: 0 0 auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 100%;
+}
+body .conteiner main .sliders .wraper-conteiner .wraper .carousel .foto-slid img {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 568px) {
+  body .conteiner main .sliders .wraper-conteiner .wraper .carousel .foto-slid {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  body .conteiner main .sliders .wraper-conteiner .wraper .carousel .foto-slid {
+    width: 33.3333333333%;
+  }
+}
+body .conteiner main .sliders .wraper-conteiner .wraper .right {
+  right: 20px;
+}
+body .conteiner main .sliders .wraper-conteiner .wraper .left {
+  left: 20px;
+}
+body footer .cosmetolog-futr, body footer .frontend-futer {
+  max-width: 1080px;
+  height: 200px;
+  background: linear-gradient(93.92deg, #1EABA3 0%, #2872A7 53.21%);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+body footer .cosmetolog-futr .up-info, body footer .frontend-futer .up-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+body footer .cosmetolog-futr .up-info .profesion p, body footer .frontend-futer .up-info .profesion p {
+  font-size: 32px;
+}
+body footer .cosmetolog-futr .up-info .yor-name p, body footer .frontend-futer .up-info .yor-name p {
+  font-size: 32px;
+}
+body footer .cosmetolog-futr .dovn-info, body footer .frontend-futer .dovn-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+body footer .cosmetolog-futr .dovn-info .yor-links, body footer .frontend-futer .dovn-info .yor-links {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+}
+body footer .cosmetolog-futr .dovn-info .yor-links a img, body footer .frontend-futer .dovn-info .yor-links a img {
+  width: 40px;
+}
+body footer .cosmetolog-futr .dovn-info .yor-foto img, body footer .frontend-futer .dovn-info .yor-foto img {
+  width: 70px;
+  border-radius: 50px;
+}
+@media (min-width: 425px) {
+  body footer .cosmetolog-futr .yor-links, body footer .frontend-futer .yor-links {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  body footer .cosmetolog-futr .yor-links a img, body footer .frontend-futer .yor-links a img {
+    width: 50px;
+  }
+  body footer .cosmetolog-futr .yor-foto img, body footer .frontend-futer .yor-foto img {
+    width: 100px;
+  }
+}
+body footer .frontend-futer {
+  background: linear-gradient(93.92deg, #2872A7 0%, #1EABA3 53.21%);
+}/*# sourceMappingURL=main.css.map */
