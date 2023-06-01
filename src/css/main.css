@@ -434,6 +434,9 @@ body .conteiner main .main-procedur .info-main-procedur .advantage p {
     display: block;
   }
 }
+body .conteiner main .sliders .wraper-conteiner {
+  overflow-x: hidden;
+}
 body .conteiner main .sliders .wraper-conteiner .wraper {
   position: relative;
 }
@@ -444,13 +447,13 @@ body .conteiner main .sliders .wraper-conteiner .wraper .left, body .conteiner m
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
 body .conteiner main .sliders .wraper-conteiner .wraper .left img, body .conteiner main .sliders .wraper-conteiner .wraper .right img {
   width: 70px;
 }
 body .conteiner main .sliders .wraper-conteiner .wraper .carousel {
   display: flex;
-  overflow-x: hidden;
 }
 body .conteiner main .sliders .wraper-conteiner .wraper .carousel .foto-slid {
   flex: 0 0 auto;

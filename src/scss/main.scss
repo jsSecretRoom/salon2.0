@@ -481,6 +481,7 @@ body{
             }
             .sliders{
                 .wraper-conteiner {
+                    overflow-x: hidden;
                     .wraper {
                         position: relative;
                         .left,.right {
@@ -490,7 +491,7 @@ body{
                             background: none;
                             border: none;
                             cursor: pointer;
-                            
+                            z-index: 1;
                             img {
                             width: 70px;
                             }
@@ -498,14 +499,11 @@ body{
                         
                         .carousel {
                             display: flex;
-                            overflow-x: hidden;
-                            
                             .foto-slid {
                                 flex: 0 0 auto;
                                 height: 100%;
                                 object-fit: cover;
                                 user-select: none;
-                                
                                 width: calc(100%);
                                 img {
                                     display: block;
@@ -605,3 +603,5 @@ body{
     }
 }
 
+
+  
